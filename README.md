@@ -22,7 +22,7 @@ Watch the full gameplay demo here:
 
 ---
 
-## 🎬 Embedded Gameplay Demo (Directly Playable)
+<!-- ## 🎬 Embedded Gameplay Demo (Directly Playable)
 
 <p align="center">
   <video width="70%" controls>
@@ -31,7 +31,7 @@ Watch the full gameplay demo here:
   </video>
 </p>
 
----
+--- -->
 
 # 🔥 Core Features & Gameplay
 
