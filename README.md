@@ -11,8 +11,6 @@ The player and bots move around a destructible grid environment, placing bombs, 
 
 ---
 
----
-
 # 🎬 Project Demo Video
 
 ## 📌 YouTube Link
@@ -154,66 +152,23 @@ Tune difficulty for the player.
 
 ---
 
-# 📁 File Structure Breakdown
+## 📁 File structure
 
-### **`main.py`**
+Here's a compact, easy-to-scan overview of the repository root and what each file/folder does. Filenames are wrapped in backticks — click to open them on GitHub.
 
-Entry point. Handles UI screens and transitions to the game.
-
-### **`config.py`**
-
-Game constants—window size, tile types, default settings, bomb fuse time, etc.
-
-### **`settings.py`**
-
-Defines:
-
-- `GameSettings` data class
-- Settings UI screen
-- Pre-game configuration
-
-### **`game.py`**
-
-Core game loop:
-
-- Player + bot updates
-- Bomb handling
-- Explosion mechanics
-- Rendering the grid
-- Win/loss checks
-
-### **`entities.py`**
-
-Contains dataclasses for:
-
-- Player
-- Computer (Bot)
-- Bomb
-- Explosion
-- Tile types
-
-### **`map.py`**
-
-Handles:
-
-- Map generation
-- Soft & hard wall placement
-- Walkable tile logic
-
-### **`pathfinding.py`**
-
-A\* pathfinding implementation.
-
-### **`utils.py`**
-
-Helper functions:
-
-- `now_ms()`
-- `manhattan()`
-- Misc utilities
-
----
-
-# ✅ End of README
-
-Feel free to contribute, fork, or modify the project!
+```
+.
+├── assets/                 # media (sprites, demo video)
+│   └── bombermanai.mp4
+├── botai.txt               # AI notes / logs
+├── config.py               # constants and global config
+├── entities.py             # Player, Bot, Bomb, Explosion dataclasses
+├── game.py                 # core game loop and rendering
+├── main.py                 # UI entry point and game launcher
+├── map.py                  # map generation & tile logic
+├── pathfinding.py          # A* pathfinding implementation
+├── README.md               # this file
+├── settings.py             # game settings & settings UI
+├── utils.py                # small helper utilities
+└── __pycache__/            # Python bytecode (ignored in VCS)
+```
