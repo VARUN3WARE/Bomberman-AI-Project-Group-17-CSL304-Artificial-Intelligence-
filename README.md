@@ -11,6 +11,31 @@ The player and bots move around a destructible grid environment, placing bombs, 
 
 ---
 
+---
+
+# 🎬 Project Demo Video
+
+## 📌 YouTube Link
+
+Watch the full gameplay demo here:  
+👉 **https://www.youtube.com/watch?v=fGdCZeGzFvk**
+
+---
+
+## ▶️ Embedded Demo (Playable in GitHub)
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=fGdCZeGzFvk">
+    <img src="bombermanaigame.jpeg" alt="Bomberman AI Demo Thumbnail" width="70%">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Click the image above to watch the demo on YouTube.</strong>
+</p>
+
+---
+
 # 🔥 Core Features & Gameplay
 
 This project recreates the traditional Bomberman experience with added AI enhancements.
