@@ -25,10 +25,13 @@ Watch the full gameplay demo here:
 ## 🎬 Embedded Gameplay Demo (Directly Playable)
 
 <p align="center">
-  <video src="bombermanai.mp4" width="70%" controls>
-    Your browser does not support the video tag.
+  <video width="70%" controls>
+    <source src="https://raw.githubusercontent.com/VARUN3WARE/Bomberman-AI-Project-Group-17-CSL304-Artificial-Intelligence-/main/assets/bombermanai.mp4" type="video/mp4">
+    Your browser does not support the video tag. You can download the video directly from the repo: [assets/bombermanai.mp4](assets/bombermanai.mp4)
   </video>
 </p>
+
+---
 
 # 🔥 Core Features & Gameplay
 
