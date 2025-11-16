@@ -22,19 +22,13 @@ Watch the full gameplay demo here:
 
 ---
 
-## ▶️ Embedded Demo (Playable in GitHub)
+## 🎬 Embedded Gameplay Demo (Directly Playable)
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=fGdCZeGzFvk">
-    <img src="bombermanaigame.jpeg" alt="Bomberman AI Demo Thumbnail" width="70%">
-  </a>
+  <video src="bombermanai.mp4" width="70%" controls>
+    Your browser does not support the video tag.
+  </video>
 </p>
-
-<p align="center">
-  <strong>Click the image above to watch the demo on YouTube.</strong>
-</p>
-
----
 
 # 🔥 Core Features & Gameplay
 
