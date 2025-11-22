@@ -535,11 +535,7 @@ class G(tk.Frame):
 
             elif bot.st == "chase":
                 if not bot.pth:
-<<<<<<< HEAD
-                    pth = find_path(self.m, (bot.x,bot.y), (pl.x,pl.y))
-=======
                     pth = find_path(self.m, (bot.x,bot.y), (pl.x,pl.y), algorithm=self.s.pathfinding_algorithm, heuristic=self.s.heuristic)
->>>>>>> origin/master
 
                     if pth and len(pth) > 0:
                         bot.pth = pth
@@ -586,11 +582,7 @@ class G(tk.Frame):
                     tgt = self.find_n_s(bot)
 
                     if tgt:
-<<<<<<< HEAD
-                        pth = find_path(self.m, (bot.x,bot.y), tgt)
-=======
                         pth = find_path(self.m, (bot.x,bot.y), tgt, algorithm=self.s.pathfinding_algorithm, heuristic=self.s.heuristic)
->>>>>>> origin/master
                         if pth:
 
                             bot.pth = pth
@@ -628,11 +620,7 @@ class G(tk.Frame):
             n = now()
             if bot.pth_tgt and n < bot.pth_stale:
                 if bot.st != "chase":
-<<<<<<< HEAD
-                    pth = find_path(self.m, (bot.x,bot.y), bot.pth_tgt)
-=======
                     pth = find_path(self.m, (bot.x,bot.y), bot.pth_tgt, algorithm=self.s.pathfinding_algorithm, heuristic=self.s.heuristic)
->>>>>>> origin/master
                     if pth:
                         bot.pth = pth
                         bot.stat = f"replan -> {bot.pth_tgt} (path {len(pth)})"
