@@ -1,8 +1,8 @@
 # 🎮 Bomberman (Tkinter) – AI Project README
 
-A complete breakdown of the Bomberman AI project, including gameplay features, AI logic, and file structure.
-
 ## ![iamge](bombermanaigame.jpeg)
+
+A complete breakdown of the Bomberman AI project, including gameplay features, AI logic, and file structure.
 
 ## ⭐ Overview
 
