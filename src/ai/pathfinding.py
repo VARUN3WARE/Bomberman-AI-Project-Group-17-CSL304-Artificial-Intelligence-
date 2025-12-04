@@ -1,9 +1,9 @@
 import heapq
 from typing import List, Tuple, Optional, Set, Dict, Callable
 
-from utils import manh, neigh, chebyshev, euclidean
-from map import GMap
-from config import E
+from src.core.utils import manh, neigh, chebyshev, euclidean
+from src.game_objects.map import GMap
+from src.core.config import E
 
 PathfindingFunc = Callable[[GMap, Tuple[int, int], Tuple[int, int], Set[Tuple[int, int]]], Optional[List[Tuple[int, int]]]]
 HeuristicFunc = Callable[[Tuple[int, int], Tuple[int, int]], float]

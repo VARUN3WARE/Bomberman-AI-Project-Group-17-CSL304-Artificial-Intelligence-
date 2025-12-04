@@ -3,14 +3,18 @@ import random
 from collections import deque
 from typing import List, Tuple, Optional, Set, Dict
 
-from utils import now, manh, neigh
-from config import *
+from src.core.utils import now, manh, neigh
+from src.core.config import (
+    C, MW, MH, WW, WH, tick, bot_aggro, p_bombs, p_power, bot_n, bot_v,
+    fuse, expl_ms, p_hp, b_hp, b_bombs, b_power, safe_m, repath_hold,
+    E, S, H
+)
 
-from settings import GameSet
-from entities import Pl, Comp, B, Expl, Bman
-from map import GMap
+from src.ui.settings import GameSet
+from src.game_objects.entities import Pl, Comp, B, Expl, Bman
+from src.game_objects.map import GMap
 
-from pathfinding import find_path
+from src.ai.pathfinding import find_path
 
 
 class G(tk.Frame):

@@ -1,7 +1,7 @@
 import random
 from typing import List, Optional
-from entities import T, B
-from config import E, S, H
+from src.game_objects.entities import T, B
+from src.core.config import E, S, H
 
 class GMap:
     def __init__(self, w:int, h:int, s:Optional[int]=None):

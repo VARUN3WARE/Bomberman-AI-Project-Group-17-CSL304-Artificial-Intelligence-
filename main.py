@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import tkinter as tk
-from game import G
-from settings import SetScreen, GameSet
-from config import WW, WH
+from src.game import G
+from src.ui.settings import SetScreen, GameSet
+from src.core.config import WW, WH
 
 class App:
     def __init__(self, r: tk.Tk):

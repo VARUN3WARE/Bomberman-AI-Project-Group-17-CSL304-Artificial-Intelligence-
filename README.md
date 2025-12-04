@@ -152,23 +152,110 @@ Tune difficulty for the player.
 
 ---
 
-## 📁 File structure
+## 📁 Project Structure
 
-Here's a compact, easy-to-scan overview of the repository root and what each file/folder does. Filenames are wrapped in backticks — click to open them on GitHub.
+The project follows a clean, modular architecture with organized source code:
 
 ```
 .
-├── assets/                 # media (sprites, demo video)
+├── main.py                     # Application entry point
+├── README.md                   # Project documentation
+├── Group17_projectReport.pdf   # Detailed project report
+├── assets/                     # Media files (demo video)
 │   └── bombermanai.mp4
-├── botai.txt               # AI notes / logs
-├── config.py               # constants and global config
-├── entities.py             # Player, Bot, Bomb, Explosion dataclasses
-├── game.py                 # core game loop and rendering
-├── main.py                 # UI entry point and game launcher
-├── map.py                  # map generation & tile logic
-├── pathfinding.py          # A* pathfinding implementation
-├── README.md               # this file
-├── settings.py             # game settings & settings UI
-├── utils.py                # small helper utilities
-└── __pycache__/            # Python bytecode (ignored in VCS)
+└── src/                        # Source code (organized)
+    ├── game.py                 # Main game loop & rendering
+    │
+    ├── core/                   # Core utilities & config
+    │   ├── config.py           # Game constants
+    │   └── utils.py            # Helper functions
+    │
+    ├── game_objects/           # Game entities
+    │   ├── entities.py         # Player, Bot, Bomb classes
+    │   └── map.py              # Map generation
+    │
+    ├── ai/                     # AI & pathfinding
+    │   └── pathfinding.py      # A*, Dijkstra, BFS
+    │
+    └── ui/                     # User interface
+        └── settings.py         # Settings screen
 ```
+
+---
+
+## 🚀 Installation & Running
+
+### Prerequisites
+
+- Python 3.7+
+- tkinter (usually comes with Python)
+
+### Run the Game
+
+```bash
+# Clone the repository
+git clone https://github.com/VARUN3WARE/Bomberman-AI-Project-Group-17-CSL304-Artificial-Intelligence-.git
+
+# Navigate to project directory
+cd Bomberman-AI-Project-Group-17-CSL304-Artificial-Intelligence-
+
+# Run the game
+python main.py
+```
+
+### Game Controls
+
+- **Arrow Keys / WASD**: Move player
+- **Space**: Place bomb
+- **Q / ESC**: Quit game
+
+---
+
+## 🎯 Features
+
+### ✨ Intelligent AI System
+
+- **State Machine**: Search → Chase → Evade behaviors
+- **Multiple Pathfinding Algorithms**: A\*, Dijkstra, BFS
+- **Multiple Heuristics**: Manhattan, Euclidean, Chebyshev
+- **Smart Evasion**: Evaluates safe zones and escape routes
+- **Safety Checks**: Won't place bombs without escape path
+
+### 🎮 Customizable Gameplay
+
+- Adjustable game speed
+- Configurable bot count and aggression
+- Variable player power and bomb capacity
+- Selectable pathfinding algorithm and heuristic
+
+### 🏗️ Clean Architecture
+
+- Modular code organization
+- Separation of concerns (game logic, AI, UI, entities)
+- Easy to extend and maintain
+
+---
+
+## 🧩 Module Descriptions
+
+### `src/core/`
+
+**config.py**: All game constants (dimensions, timing, entity properties)  
+**utils.py**: Time tracking and distance calculations
+
+### `src/game_objects/`
+
+**entities.py**: Entity classes (Player, Bot, Bomb, Explosion)  
+**map.py**: Procedural map generation with hard/soft walls
+
+### `src/ai/`
+
+**pathfinding.py**: Pathfinding algorithms with configurable heuristics
+
+### `src/ui/`
+
+**settings.py**: Pre-game settings screen with algorithm selection
+
+### `src/game.py`
+
+Main game engine handling game loop, entity management, collision detection, and rendering

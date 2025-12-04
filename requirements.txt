@@ -1,0 +1,21 @@
+# Bomberman AI Project - Python Dependencies
+# The game uses only Python standard library modules
+
+# Main GUI Framework (usually included with Python)
+# tkinter comes pre-installed with most Python distributions
+
+# If tkinter is not available, install it:
+# - Ubuntu/Debian: sudo apt-get install python3-tk
+# - macOS: Included with Python installation
+# - Windows: Included with Python installation
+
+# No external pip packages required!
+# All dependencies are part of Python standard library:
+# - tkinter (GUI)
+# - random (randomization)
+# - time (timing)
+# - collections (deque for BFS)
+# - typing (type hints)
+# - dataclasses (entity definitions)
+# - heapq (A* priority queue)
+# - math (distance calculations)

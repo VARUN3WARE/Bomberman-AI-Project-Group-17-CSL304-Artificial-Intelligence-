@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from typing import List, Tuple, Optional, Set
-from config import bot_v, bot_aggro
+from src.core.config import bot_v, bot_aggro
 
 @dataclass
 class T:

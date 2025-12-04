@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from dataclasses import dataclass, field
 from typing import List
-from config import (
+from src.core.config import (
     bot_n, bot_aggro, p_bombs,
     p_power, tick, bot_v
 )
