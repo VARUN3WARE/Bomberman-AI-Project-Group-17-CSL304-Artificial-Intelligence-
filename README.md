@@ -2,7 +2,7 @@
 
 A complete breakdown of the Bomberman AI project, including gameplay features, AI logic, and file structure.
 
----
+## ![iamge](bombermanaigame.jpeg)
 
 ## ⭐ Overview
 
